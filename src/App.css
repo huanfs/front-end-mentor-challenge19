@@ -1,38 +1,37 @@
-.App {
-  text-align: center;
+.App{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-around;
+    background-color:var(--VeryDarkBlue);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App h1{
+    letter-spacing: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App section{
+    width:60%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:1em;
+    position:relative;
+    bottom:200px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App footer{
+    width:100%;
+    height:200px;
+    position:absolute;
+    bottom:0px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-image:url("./images/pattern-hills.svg");
+    background-size:100% 100%;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer ul{
+    display:flex;
+    list-style-type:none;
+    gap:2em;
 }

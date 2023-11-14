@@ -1,0 +1,8 @@
+ul svg{
+    transition:0.3s;
+}
+ul svg:hover{
+    cursor:pointer;
+    transform: scale(1.4, 1.4);
+    color:var(--SoftRed);
+}

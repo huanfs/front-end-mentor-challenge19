@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+/*componentes*/
+import DataContent from "./components/dataContent";
+import Social from "./components/social";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>we're launching soon</h1>
+
+      <section className="pannel">
+        <DataContent type="Day"/>
+        <DataContent type="Hours"/>
+        <DataContent type="Minutes"/>
+        <DataContent type="Seconds"/>
+      </section>
+
+      <footer>
+        <ul>
+          <Social media="fa-brands fa-facebook"/>
+          <Social media="fa-brands fa-pinterest"/>
+          <Social media="fa-brands fa-instagram"/>
+        </ul>
+      </footer>
     </div>
   );
 }

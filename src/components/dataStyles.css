@@ -1,0 +1,19 @@
+.visor{
+    width:100px;
+    height:100px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    border-radius:10px 25px;
+    border:1px solid white;
+}
+.visor h2{
+    position:relative;
+    top:0.5em;
+    font-size:3em;
+}
+.visor p{
+    position:relative;
+    bottom:-0.5em;
+}
